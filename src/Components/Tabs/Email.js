@@ -15,8 +15,10 @@ class Email extends Component {
   };
 
   validate = () => {
-    let email = this.state.value;
-    (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)) ?
+    let email = this.state.value.trim();
+    let lastFour = email.substring(email.length-4);
+    console.log(email, lastFour);
+    (email.split('@').length == 2 && email.indexOf('@') > 0 && (lastFour === '.edu' || lastFour === '.com')) ?
         this.setState({validEmail : 1}) :
         this.setState({validEmail : 0})
   };

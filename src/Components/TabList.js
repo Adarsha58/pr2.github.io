@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../assets/css/main.css";
+import Tab from './Tabs/Tab';
 
 const Tabs = ["Home", "Image", "Video", "Table", "Email"];
-
 class TabList extends Component {
   constructor(props) {
     super(props);
@@ -17,18 +17,15 @@ class TabList extends Component {
   };
 
   render() {
+    //array of TabComponents elements
+    const TabsComponents = Tabs.map((label, index) => {
+     return (<Tab key={index} name={label} index={index} handleSelect={this.handleSelect} activeTab={this.state.activeTab}/>); 
+    });
+
     return (
       <nav className="Navbar">
         <div className="lists">
-          {Tabs.map((label, index) => (
-            <span
-              className={`${this.state.activeTab === index ? "active-page" : ""} ${label.toUpperCase()}`}
-              key={index}
-              onClick={() => this.handleSelect(index)}
-            >
-              {label}
-            </span>
-          ))}
+          { TabsComponents.map((tab) => tab) }
         </div>
       </nav>
     );

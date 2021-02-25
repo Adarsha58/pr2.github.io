@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      ActiveTab: 0,
+      Tab_Id: 0,
       scrollTop: false,
     };
   }
@@ -36,7 +36,7 @@ class App extends Component {
   };
 
   handleClick = (tab) => {
-    this.setState({ ActiveTab: tab });
+    this.setState({ Tab_Id: tab });
   };
 
   render() {
@@ -64,7 +64,8 @@ class App extends Component {
             Top
           </button>
         ) : null}
-        <Body activeTab={this.state.ActiveTab} />
+        
+        <Body activeTab={this.state.Tab_Id} />
       </div>
     );
   }
