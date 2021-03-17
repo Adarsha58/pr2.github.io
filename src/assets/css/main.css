@@ -2,6 +2,107 @@ body{
     position: relative;
 }
 
+.allMeetings{
+    overflow: auto;
+}
+
+form > input {
+    width: 95%;
+    margin-top: 5px;
+    height: 25px;
+}
+.meeting-form {
+    border: 1px solid #4682b4;
+    padding: 15px;
+    padding-top:20px;
+    font-size: 16px;
+    background-color: white;
+}
+.meeting-header{
+    margin-top: 1px;
+    margin-bottom: 3px;
+}
+
+button {
+    cursor:pointer;
+}
+.save_button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    height:6vh;
+    cursor: pointer;
+}
+
+.meeting-item{
+    margin-bottom: 12px;
+    border: 1px solid #4682b4;
+    background: white;
+    padding:15px;
+    overflow-x:auto;
+    overflow: auto;
+}
+
+.meeting-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.meeting-button {
+    color: #ffffff;
+    background: #ff0000;
+    border: 1px #DADADA solid;
+    padding: 5px 10px;
+    border-radius: 2px;
+    font-size: 9pt;
+    outline: none;
+    margin-left: 60%;
+    margin-top: 4%;
+    letter-spacing: 1px;
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+}
+
+.container {
+    border: solid black 1px;
+    margin: 40px auto;
+    max-width: 500px;
+    overflow: auto;
+    min-height: 300px;
+    border-radius: 5px;
+    padding: 30px;
+    background-color:rgb(247, 247, 247);
+    
+}
+
+.zoom_container { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.button {
+    margin-top: 15px;
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #0b6120;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    transition: all 0.4s ease 0s;
+    margin-left: 100px;
+    letter-spacing: 1px;
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+}
+
+
+.managerFont {
+    margin-top: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 .Navbar {
     background-color:#5f5f5f;
     height:3em;

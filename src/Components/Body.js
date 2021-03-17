@@ -4,6 +4,7 @@ import Image from "./Tabs/Image";
 import Video from "./Tabs/Video";
 import Table from "./Tabs/Table";
 import Email from "./Tabs/Email";
+import ZoomMeeting from './Tabs/ZoomMeeting';
 import "../assets/css/main.css";
 
 class Body extends Component {
@@ -41,7 +42,7 @@ class Body extends Component {
           <Table />
         ) : this.props.activeTab === 4 ? (
           <Email />
-        ) : null}
+        ) : <ZoomMeeting/>}
 
         <div
           id="modal"

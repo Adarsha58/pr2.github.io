@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../assets/css/main.css";
 import Tab from './Tabs/Tab';
 
-const Tabs = ["Home", "Image", "Video", "Table", "Email"];
+const Tabs = ["Home", "Image", "Video", "Table", "Email", "ZoomMeeting"];
 class TabList extends Component {
   constructor(props) {
     super(props);
